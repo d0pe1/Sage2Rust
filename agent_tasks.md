@@ -1,15 +1,12 @@
 # Milestone Tasks
-
-- uuid: TSK-0001
-  description: Scaffold repository baseline
-  why: Provide initial structure for agent ecosystem
-  depends_on: []
+### ***Example:***
+---
+- uuid: < unique name or UUID >
+  description: Describe the task and how it plugs into other tasks
+  why: Provide a reason for task existing in context
+  depends_on: [uuid]
   priority: 1
-  status: [x]
+  status: []
+---
 
-- uuid: TSK-0002
-  description: Implement planning DAG parser
-  why: Enable PlannerAgent to parse project scope
-  depends_on: [TSK-0001]
-  priority: 2
-  status: [ ]
+### ***Project Milestones:***
