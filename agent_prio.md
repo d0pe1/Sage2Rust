@@ -16,4 +16,4 @@
   parent: TSK-0002
   description: Create DAG parser skeleton
   depends_on: [ST-0002]
-  status: [ ]
+  status: [x]
