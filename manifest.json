@@ -1,6 +1,17 @@
 {
   "modules": [
-    {"uuid": "TSK-0001", "files": ["README.md", "agents.md"]},
-    {"uuid": "TSK-0002", "files": []}
+    {
+      "uuid": "TSK-0001",
+      "files": [
+        "README.md",
+        "agents.md"
+      ]
+    },
+    {
+      "uuid": "TSK-0002",
+      "files": [
+        "src/dag_parser.py"
+      ]
+    }
   ]
 }
