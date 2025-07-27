@@ -10,15 +10,19 @@ This file defines the roles and rules for all agents working in this repository.
 - Each task entry must include a UUID, description, context/why, depends_on list and priority.
 - Updates `manifest.json` with new artifacts and produces the `taskmap.svg` Gantt overlay.
 - Commits all updated state files before ExecutorAgents may work.
+- Will run if all tasks in agent_tasks.md are marked complete to do a final project review and hand it to the MetaStateChecker.
 
 ### ExecutorAgent
 - Pulls unblocked tasks from `agent_prio.md` using the associated UUID and context.
 - Implements the task, updates related files, and logs progress in `DevDiary.md`.
 - Marks tasks `[x]` only when work is complete and integrated.
 - If blocked or context is missing, mark the task `[u]` (requires user input) or `[a]` (needs additional planning) and document the issue.
+- When task is done and marked complete, will tell the PlannerAgent to check if Milestone is also complete for update.
 
 ### MetaStateCheckerAgent
 - Audits `agent_tasks.md`, `agent_prio.md` and `manifest.json` for inconsistencies.
+- Performs a comparison between the expected and actual state to detect misimplementations or logical errors.
+- This includes full source audits! Scope, Implementation, Interconnection of Systems, all to make the project COMPLETE
 - Flags stale or broken tasks by setting their status to `[u]` or `[a]` and logs details in `DevDiary.md`.
 - Must run after each milestone or significant plan update.
 - Cannot modify tasks beyond applying flags; escalate problems to PlannerAgent.
