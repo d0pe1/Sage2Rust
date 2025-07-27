@@ -5,7 +5,7 @@
   description: Describe the task and how it plugs into other tasks
   why: Provide a reason for task existing in context
   depends_on: [uuid]
-  priority: 1
+  priority: A Number
   status: []
 ---
 
