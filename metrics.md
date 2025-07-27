@@ -1,6 +1,6 @@
 # Metrics
 
-total_tasks: 2
-completed_tasks: 1
-open_tasks: 1
-critical_path: TSK-0002
+total_tasks: 0
+completed_tasks: 0
+open_tasks: 0
+critical_path: NULL
