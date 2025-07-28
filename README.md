@@ -1,4 +1,5 @@
 # SelfPlanner Agent Ecosystem
+Author : Nico Schmitt
 
 Welcome to the SelfPlanner repository. This project hosts an autonomous project operating system that coordinates multiple agents through version controlled state files.
 
