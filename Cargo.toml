@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "sage_core",
+    "sage_ini"
+]

@@ -37,3 +37,16 @@ The graph is acyclic; PlannerAgent ensures there are no missing or circular depe
 
 Agents should always update the relevant state files when planning or completing work so that the DAG and Gantt overlay remain accurate.
 
+## Building
+This repository uses a Cargo workspace. To build all crates run:
+
+```bash
+cargo build
+```
+
+Unit tests can be executed with:
+
+```bash
+cargo test
+```
+
