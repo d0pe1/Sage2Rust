@@ -50,3 +50,17 @@ Unit tests can be executed with:
 cargo test
 ```
 
+## ECS Usage
+The `sage_core` crate now exposes a minimal ECS. Entities are spawned via the
+`World` type:
+
+```rust
+use sage_core::ecs::World;
+
+let mut world = World::new();
+let entity = world.spawn_unit();
+```
+
+Components implementing the `Component` trait can be attached with
+`add_component` and retrieved using `get_component`.
+

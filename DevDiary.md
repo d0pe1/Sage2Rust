@@ -10,3 +10,17 @@
 ## 2024-05-29 ExecutorAgent
 - Completed ST1: workspace and crates created.
 - Implemented INI parser and tests. Updated README.
+
+## 2025-07-29 PlannerAgent
+- Reviewed completed Milestone 1.
+- Planned Milestone 2 for ECS architecture and entity manager.
+- Added five new subtasks for ECS scaffolding, manager, spawn helper, tests and documentation.
+- Updated metrics, state hash and taskmap accordingly.
+
+## 2025-07-29 ExecutorAgent
+- Completed ST5: Added ECS module scaffolding with basic World and Component traits.
+- Implemented ST6: entity manager storing components generically.
+- Implemented ST7: added spawn_unit helper.
+- Implemented ST8: added unit tests for entity creation.
+- Implemented ST9: documented ECS usage in README.
+- Milestone 2 completed: ECS can spawn and manage entities.
