@@ -5,7 +5,24 @@
       "files": [
         "README.md",
         "agents.md",
-        "manifest.json"
+        "manifest.json",
+        ".gitignore"
+      ]
+    },
+    {
+      "uuid": "sage_core",
+      "files": [
+        "Cargo.toml",
+        "sage_core/Cargo.toml",
+        "sage_core/src/lib.rs"
+      ]
+    },
+    {
+      "uuid": "sage_ini",
+      "files": [
+        "Cargo.toml",
+        "sage_ini/Cargo.toml",
+        "sage_ini/src/lib.rs"
       ]
     }
   ]

@@ -1,1 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300">
+  <rect x="20" y="20" width="160" height="30" fill="#cfe2f3" stroke="#6fa8dc" />
+  <text x="25" y="40" font-size="12">M1 INI Parsing</text>
+
+  <rect x="40" y="70" width="160" height="25" fill="#d9ead3" stroke="#93c47d" />
+  <text x="45" y="88" font-size="10">ST1 Workspace</text>
+
+  <rect x="40" y="105" width="160" height="25" fill="#d9ead3" stroke="#93c47d" />
+  <text x="45" y="123" font-size="10">ST2 Parser</text>
+
+  <rect x="40" y="140" width="160" height="25" fill="#d9ead3" stroke="#93c47d" />
+  <text x="45" y="158" font-size="10">ST3 Tests</text>
+
+  <rect x="40" y="175" width="160" height="25" fill="#d9ead3" stroke="#93c47d" />
+  <text x="45" y="193" font-size="10">ST4 Docs</text>
+
+  <rect x="250" y="20" width="180" height="30" fill="#fce5cd" stroke="#e69138" />
+  <text x="255" y="40" font-size="12">M2 ECS (planning)</text>
+</svg>
