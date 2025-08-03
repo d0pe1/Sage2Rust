@@ -63,3 +63,37 @@
   why: Explain how to create and manage entities
   depends_on: [dca97530-e53b-471f-8205-f83f090805d9]
   status: [x]
+- uuid: 22f7f035-c8c4-41d4-87e4-7393fd8efdc9
+  parent: 7c9c38d0-c864-4e87-ac4f-9df7a9e7e9e5
+  description: Create engine_map script using Ctags to list functions
+  why: Automated enumeration is required to handle thousands of legacy functions
+  depends_on: []
+  status: [ ]
+
+- uuid: 651b0f03-067a-45f7-bf3c-dcccb2c9cb1b
+  parent: 7c9c38d0-c864-4e87-ac4f-9df7a9e7e9e5
+  description: Generate function list for GameLogic subsystem
+  why: First dataset segment for mapping
+  depends_on: [22f7f035-c8c4-41d4-87e4-7393fd8efdc9]
+  status: [ ]
+
+- uuid: eae6dbe3-9be8-4026-96ce-b22ead041f0c
+  parent: 7c9c38d0-c864-4e87-ac4f-9df7a9e7e9e5
+  description: Map GameClient subsystem functions
+  why: Capture rendering and UI code relationships
+  depends_on: [651b0f03-067a-45f7-bf3c-dcccb2c9cb1b]
+  status: [ ]
+
+- uuid: d782e0c1-fb67-4a02-bbab-d89d517161e4
+  parent: 7c9c38d0-c864-4e87-ac4f-9df7a9e7e9e5
+  description: Map GameNetwork subsystem functions
+  why: Document networking paths
+  depends_on: [eae6dbe3-9be8-4026-96ce-b22ead041f0c]
+  status: [ ]
+
+- uuid: 81f2de0d-07bd-41a0-9dea-509577029967
+  parent: 7c9c38d0-c864-4e87-ac4f-9df7a9e7e9e5
+  description: Consolidate data and output full function_map.md and function_graph.json
+  why: Provide complete DAG for planners and developers
+  depends_on: [d782e0c1-fb67-4a02-bbab-d89d517161e4]
+  status: [ ]
