@@ -24,6 +24,14 @@
         "sage_ini/Cargo.toml",
         "sage_ini/src/lib.rs"
       ]
+    },
+    {
+      "uuid": "engine_mapping",
+      "files": [
+        "scripts/engine_map.py",
+        "function_map.md",
+        "function_graph.json"
+      ]
     }
   ]
 }

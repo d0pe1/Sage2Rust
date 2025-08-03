@@ -24,3 +24,8 @@
 - Implemented ST8: added unit tests for entity creation.
 - Implemented ST9: documented ECS usage in README.
 - Milestone 2 completed: ECS can spawn and manage entities.
+
+## 2025-07-30 PlannerAgent
+- Planned Milestone 3 for generating a detailed map of the legacy engine.
+- Added five subtasks to incrementally script and produce the function map.
+- Updated manifest, metrics, state hash and taskmap accordingly.
